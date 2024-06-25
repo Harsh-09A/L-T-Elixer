@@ -11,7 +11,21 @@ html {
   font-size: 62.5%;
   /* 1rem = 10px  */
   scroll-behavior: smooth;
-  scroll-snap-type: Y proximity;
+  /* scroll-snap-type: Y proximity; */
+  scroll-padding-top: 70px;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* 
+  --colorPrimary: #095c32;#3ec17e ,#206642
+*/
+
+:root {
+  --colorPrimary: #095c32;
+  --colorSecondary: #206642;
+  --text-color: #000;
+  --colorWhite: #ffffff;
 }
 
 h1,
@@ -31,7 +45,7 @@ label {
   font-size: 1.8rem;
   letter-spacing: 0.1rem;
   font-weight: 400;
-  color: var(--para-color);
+  color: var(--text-color);
   line-height: 1.5;
 }
 
@@ -41,4 +55,62 @@ a {
 
 li {
   list-style: none;
+}
+
+/* Navbar */
+.navbar-nav {
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.navbar-nav .nav-link {
+  color: var(--text-color);
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  background-color: var(--colorPrimary);
+  height: 100%;
+  color: var(--colorWhite);
+}
+
+.nav-link:hover {
+  background-color: var(--colorWhite);
+}
+
+.nav-icon {
+  margin-right: 5px;
+}
+@media only screen and (min-width: 1000px) {
+  .navbar-nav .nav-link {
+    font-size: 1.8rem !important;
+    letter-spacing: 0.02vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .navbar-brand img {
+    height: 45px;
+  }
+}
+
+/* All Sections */
+
+.section-heading {
+  font-size: 3.5rem;
+  text-align: center;
+  color: var(--colorPrimary);
+  text-transform: uppercase;
+  /* font-family: "Trajan_Pro_Bold"; */
+}
+.sub-heading {
+  color: var(--colorSecondary);
+  /* font-family: "Trajan_Pro_Bold"; */
+}
+@media screen and (max-width: 600px) {
+  .section-heading {
+    font-size: 2.5em;
+  }
+  .sub-heading {
+    font-size: 1.6em;
+  }
 }
