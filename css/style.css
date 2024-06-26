@@ -141,6 +141,10 @@ h6 {
 /* For Desktop */
 /* InfoBox */
 @media only screen and (min-width: 990px) {
+  .info_box h1 {
+    color: white !important;
+  }
+
   .info_box {
     width: 25vw;
     text-align: center;
@@ -182,6 +186,11 @@ h6 {
 
 .info_box h1 {
   font-size: 2em;
+  color: var(--colorSecondary);
+}
+
+.info_box {
+  background-color: rgba(0, 255, 255, 0.091);
 }
 
 /* Gallery */
