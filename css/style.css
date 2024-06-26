@@ -128,10 +128,10 @@ h6 {
 
 @media screen and (max-width: 600px) {
   .carousel-item .banner1 {
-    content: url("../img/banners/mobile_banner1.jpg");
+    content: url("../img/banners/banner_mobile1.jpg") !important;
   }
   .carousel-item .banner2 {
-    content: url("../img/banners/mobile_banner3.jpg");
+    content: url("../img/banners/banner_mobile2.jpg") !important;
   }
 }
 

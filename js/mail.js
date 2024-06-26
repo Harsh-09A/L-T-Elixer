@@ -1,7 +1,7 @@
 (function () {
   // emailjs.init("to9PlFrMMimgruuH0");
-  // emailjs.init("RRvCRcSEd0Ze8J6AU"); /*L&T*/
-  emailjs.init("BnRoAjGd5ec2E2VQn");
+  emailjs.init("RRvCRcSEd0Ze8J6AU"); /*L&T*/
+  // emailjs.init("BnRoAjGd5ec2E2VQn");
 })();
 
 // Get IP Address
@@ -32,7 +32,7 @@ const handleFormSubmit = async (
     privacy_check: document.getElementById(privacyField).value,
     ip_address: await getIpAddress(),
 
-    to_email: "harsh.autowebbed@gmail.com",
+    to_email: "digital@hotspot.realty",
     company_name: " L&T Elixir ",
   };
 
