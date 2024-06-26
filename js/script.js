@@ -14,3 +14,10 @@ function toggleContent(dotsId, moreTextId, btnId) {
     moreText.style.display = "inline";
   }
 }
+
+// popup function
+$(window).ready(function () {
+  setTimeout(function () {
+    $("#popupModal").modal("show");
+  }, 3000);
+});
