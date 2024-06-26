@@ -106,59 +106,32 @@ h6 {
   }
 }
 
-.banners {
-  background-image: url("../img/banners/banner1.webp");
-  margin: 0;
+/* Slider */
+#slider_section {
   margin-top: 70px;
-  padding: 0;
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  animation: gallery 10s linear infinite;
-  -webkit-animation: gallery 10s linear infinite;
+  /* min-height: 80vh; */
 }
 
-@keyframes gallery {
-  0% {
-    background-image: url("../img/banners/banner1.webp");
-  }
-  20% {
-    background-image: url("../img/banners/banner1.webp");
-  }
-  40% {
-    background-image: url("../img/banners/banner2.webp");
-  }
-  60% {
-    background-image: url("../img/banners/banner2.webp");
-  }
-  80% {
-    background-image: url("../img/banners/banner3.webp");
-  }
-  100% {
-    background-image: url("../img/banners/banner3.webp");
-  }
+.carousel {
+  overflow: hidden !important;
+  /* max-height: 80vh; */
+}
+
+.carousel-item img {
+  max-height: 90vh;
+  width: 100% !important;
+}
+
+.carousel-indicators .active {
+  background-color: var(--colorSecondary) !important;
 }
 
 @media screen and (max-width: 600px) {
-  @keyframes gallery {
-    0% {
-      background-image: url("../img/banners/mobile_banner2.jpg");
-    }
-    20% {
-      background-image: url("../img/banners/mobile_banner2.jpg");
-    }
-    40% {
-      background-image: url("../img/banners/mobile_banner1.jpg");
-    }
-    60% {
-      background-image: url("../img/banners/mobile_banner1.jpg");
-    }
-    80% {
-      background-image: url("../img/banners/mobile_banner4.jpg");
-    }
-    100% {
-      background-image: url("../img/banners/mobile_banner4.jpg");
-    }
+  .carousel-item .banner1 {
+    content: url("../img/banners/mobile_banner1.jpg");
+  }
+  .carousel-item .banner2 {
+    content: url("../img/banners/mobile_banner3.jpg");
   }
 }
 

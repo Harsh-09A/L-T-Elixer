@@ -61,6 +61,61 @@
     <!-- Custom  -->
     <link rel="stylesheet" href="css/style.css" />
     <script defer src="js/script.js"></script>
+
+    <!-- Campaign Codes -->
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-16624939293"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "AW-16624939293");
+    </script>
+
+    <!-- Event snippet for Submit lead form - Elixir Powai conversion page -->
+    <script>
+      gtag("event", "conversion", {
+        send_to: "AW-16624939293/Ma8NCOKDx70ZEJ3isfc9",
+      });
+    </script>
+
+    <!-- Event snippet for Calls from Mobile Website - Elixir Powai conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof url != "undefined") {
+            window.location = url;
+          }
+        };
+        gtag("event", "conversion", {
+          send_to: "AW-16624939293/qEmwCMSezr0ZEJ3isfc9",
+          event_callback: callback,
+        });
+        return false;
+      }
+    </script>
+
+    <!-- Event snippet for Whatsapp  - Elixir Powai conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof url != "undefined") {
+            window.location = url;
+          }
+        };
+        gtag("event", "conversion", {
+          send_to: "AW-16624939293/VBC4CMPG170ZEJ3isfc9",
+          event_callback: callback,
+        });
+        return false;
+      }
+    </script>
   </head>
   <body
     data-bs-spy="scroll"
