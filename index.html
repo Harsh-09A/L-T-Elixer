@@ -58,7 +58,14 @@
     <link rel="stylesheet" href="css/style.css" />
     <script defer src="js/script.js"></script>
   </head>
-  <body>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#main-navbar"
+    data-bs-root-margin="0px 0px -50%"
+    data-bs-smooth-scroll="true"
+    class="scrollspy"
+    tabindex="0"
+    data-offset="1">
     <header class="fixed-top shadow-sm">
       <nav
         class="navbar navbar-expand-lg mx-auto"
@@ -79,7 +86,7 @@
             <span class="navbar-toggler-icon"> </span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a
                   class="nav-link active"
@@ -89,18 +96,10 @@
                   <span class="d-sm-inline"> Home </span>
                 </a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="#overview_section">
                   <i class="fa-solid fa-coins nav-icon"></i>
                   <span class="d-sm-inline"> Overview </span>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#properties_section">
-                  <i class="fa-solid fa-map-location nav-icon"></i>
-                  <span class="d-sm-inline"> Properties </span>
                 </a>
               </li>
               <li class="nav-item">
@@ -109,7 +108,25 @@
                   <span class="d-sm-inline"> Gallery </span>
                 </a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#configuration_section">
+                  <i class="fa-solid fa-sliders nav-icon"></i>
+                  <span class="d-sm-inline"> Configuration </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#amenities_section">
+                  <i class="fa-solid fa-wifi nav-icon"></i>
+                  <span class="d-sm-inline"> Amenities </span>
+                </a>
+              </li>
 
+              <li class="nav-item">
+                <a class="nav-link" href="#location_section">
+                  <i class="fa-solid fa-map-location nav-icon"></i>
+                  <span class="d-sm-inline"> Location </span>
+                </a>
+              </li>
               <li class="nav-item">
                 <a class="nav-link" href="#about_section">
                   <i class="fa-solid fa-user nav-icon"></i>
@@ -197,6 +214,886 @@
           </div>
         </div>
       </section>
+
+      <!-- Gallery Section -->
+      <section id="gallery_section" class="container p-4 mt-3">
+        <div>
+          <h3 class="section-heading">GALLERY</h3>
+        </div>
+
+        <!-- Gallery -->
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-4">
+            <div class="col-12 col-md-4 col-lg-3 g-3 gal-img">
+              <img
+                class="img-fluid"
+                data-fancybox="gallery"
+                src="img/gallery/lnt-elixir-reserve-powai-image8.webp"
+                data-src="img/gallery/gallery01.webp"
+                alt="" />
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3 g-3 gal-img">
+              <img
+                class="img-fluid"
+                data-fancybox="gallery"
+                src="img/gallery/lnt-elixir-reserve-powai-image7.webp"
+                data-src="img/gallery/gallery02.webp"
+                alt="" />
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3 g-3 gal-img">
+              <img
+                class="img-fluid"
+                data-fancybox="gallery"
+                src="img/gallery/lnt-elixir-reserve-powai-image6.webp"
+                data-src="img/gallery/gallery03.webp"
+                alt="" />
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3 g-3 gal-img">
+              <img
+                class="img-fluid"
+                data-fancybox="gallery"
+                src="img/gallery/lnt-elixir-reserve-powai-image5.webp"
+                data-src="img/gallery/gallery04.webp"
+                alt="" />
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3 g-3 gal-img">
+              <img
+                class="img-fluid"
+                data-fancybox="gallery"
+                src="img/gallery/lnt-elixir-reserve-powai-image4.webp"
+                data-src="img/gallery/gallery05.webp"
+                alt="" />
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3 g-3 gal-img">
+              <img
+                class="img-fluid"
+                data-fancybox="gallery"
+                src="img/gallery/lnt-elixir-reserve-powai-image3.webp"
+                data-src="img/gallery/gallery06.webp"
+                alt="" />
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3 g-3 gal-img">
+              <img
+                class="img-fluid"
+                data-fancybox="gallery"
+                src="img/gallery/lnt-elixir-reserve-powai-image2.webp"
+                data-src="img/gallery/gallery07.webp"
+                alt="" />
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3 g-3 gal-img">
+              <img
+                class="img-fluid"
+                data-fancybox="gallery"
+                src="img/gallery/lnt-elixir-reserve-powai-image1.webp"
+                data-src="img/gallery/gallery08.webp"
+                alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Configuration Section -->
+      <section id="configuration_section" class="container p-4 mt-3">
+        <div class="container">
+          <div>
+            <h3 class="section-heading">Configuration</h3>
+          </div>
+
+          <div class="container config_container">
+            <div class="row prices_row gap-2">
+              <div class="col-12 col-md-3">
+                <div class="card">
+                  <img
+                    src="img/plans/plan01.webp"
+                    class="card-img-top img-fluid"
+                    alt="..." />
+                  <div class="card-body position-relative">
+                    <div>
+                      <span
+                        class="position-absolute translate-middle badge rounded-pill price_badge">
+                        1.54 Cr* Onwards
+                      </span>
+                    </div>
+                    <h5 class="card-title">2 BHK</h5>
+                    <p class="card-text">Carpet Area: 615 Sq.Ft.</p>
+                    <a
+                      data-bs-toggle="modal"
+                      data-bs-target="#popupModal"
+                      class="btn btn-primary price_btn">
+                      Book Now
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-3">
+                <div class="card">
+                  <img
+                    src="img/plans/plan02.webp"
+                    class="card-img-top img-fluid"
+                    alt="..." />
+                  <div class="card-body position-relative">
+                    <div>
+                      <span
+                        class="position-absolute translate-middle badge rounded-pill price_badge">
+                        1.93 Cr* Onwards
+                      </span>
+                    </div>
+                    <h5 class="card-title">3 BHK</h5>
+                    <p class="card-text">Carpet Area: 814 Sq.Ft.</p>
+                    <a
+                      data-bs-toggle="modal"
+                      data-bs-target="#popupModal"
+                      class="btn btn-primary price_btn">
+                      Book Now
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-3">
+                <div class="card">
+                  <img
+                    src="img/plans/plan02.webp"
+                    class="card-img-top img-fluid"
+                    alt="..." />
+                  <div class="card-body position-relative">
+                    <div>
+                      <span
+                        class="position-absolute translate-middle badge rounded-pill price_badge">
+                        1.93 Cr* Onwards
+                      </span>
+                    </div>
+                    <h5 class="card-title">3 BHK</h5>
+                    <p class="card-text">Carpet Area: 814 Sq.Ft.</p>
+                    <a
+                      data-bs-toggle="modal"
+                      data-bs-target="#popupModal"
+                      class="btn btn-primary price_btn">
+                      Book Now
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Amenities Section -->
+      <section id="amenities_section" class="container p-4 mt-3">
+        <div>
+          <h3 class="section-heading">Amenities</h3>
+          <h5 class="sub-heading text-center">
+            IN A LEAGUE OF ITS OWN, OUR AMENITIES REDEFINE THE ART OF
+            COMFORTABLE LIVING
+          </h5>
+        </div>
+        <!-- Amenities  -->
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-4 col-lg-3">
+              <figure class="fig_img red">
+                <img
+                  class="img-fluid"
+                  src="img/amenities/amenities1.jpg"
+                  alt="sample33" />
+                <figcaption>
+                  <h3>Badminton <span> Court</span></h3>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3">
+              <figure class="fig_img blue">
+                <img
+                  class="img-fluid"
+                  src="img/amenities/amenities2.jpg"
+                  alt="sample33" />
+                <figcaption>
+                  <h3>Indoor <span> Gym</span></h3>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3">
+              <figure class="fig_img">
+                <img
+                  class="img-fluid"
+                  src="img/amenities/amenities3.jpg"
+                  alt="sample33" />
+                <figcaption>
+                  <h3>Multipurpose <span> Hall</span></h3>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3">
+              <figure class="fig_img red">
+                <img
+                  class="img-fluid"
+                  src="img/amenities/amenities4.jpg"
+                  alt="sample33" />
+                <figcaption>
+                  <h3>Indoor <span> Games</span></h3>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3">
+              <figure class="fig_img">
+                <img
+                  class="img-fluid"
+                  src="img/amenities/amenities5.jpg"
+                  alt="sample33" />
+                <figcaption>
+                  <h3>Kids <span> Play Area</span></h3>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3">
+              <figure class="fig_img blue">
+                <img
+                  class="img-fluid"
+                  src="img/amenities/amenities6.jpg"
+                  alt="sample33" />
+                <figcaption>
+                  <h3>Cricket <span> Court</span></h3>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3">
+              <figure class="fig_img red">
+                <img
+                  class="img-fluid"
+                  src="img/amenities/amenities7.jpg"
+                  alt="sample33" />
+                <figcaption>
+                  <h3>Swimming <span> Pool</span></h3>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3">
+              <figure class="fig_img">
+                <img
+                  class="img-fluid"
+                  src="img/amenities/amenities8.jpg"
+                  alt="sample33" />
+                <figcaption>
+                  <h3>Music & <span> Dance Zone</span></h3>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Location Section -->
+      <section id="location_section" class="container p-4 mt-5 mb-3">
+        <div>
+          <h2 class="section-heading">NEARBY LOCATIONS</h2>
+        </div>
+
+        <div class="container">
+          <div class="row mt-4">
+            <div class="col-12">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3767.326918264269!2d72.994097!3d19.224579!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7beacebbcfd71%3A0x2bb1e22a5c13f556!2sDosti%20West%20County!5e0!3m2!1sen!2sin!4v1715345136898!5m2!1sen!2sin"
+                width="100%"
+                height="400px"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col">
+              <!--  -->
+
+              <div class="location_features_section m-3">
+                <div>
+                  <!-- Nav Links Location -->
+                  <ul
+                    class="nav nav-pills mb-3"
+                    id="pills-tabloc"
+                    role="tablist">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link text-uppercase ami-tab active"
+                        id="pills-loc-0"
+                        data-bs-toggle="pill"
+                        data-bs-target="#loc-0"
+                        role="tab"
+                        aria-controls="loc-0"
+                        aria-selected="true">
+                        CONNECTIVITY
+                      </a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a
+                        class="nav-link text-uppercase ami-tab"
+                        id="pills-loc-1"
+                        data-bs-toggle="pill"
+                        data-bs-target="#loc-1"
+                        role="tab"
+                        aria-controls="loc-1"
+                        aria-selected="false">
+                        EDUCATIONAL INSTITUTIONS
+                      </a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a
+                        class="nav-link text-uppercase ami-tab"
+                        id="pills-loc-2"
+                        data-bs-toggle="pill"
+                        data-bs-target="#loc-2"
+                        role="tab"
+                        aria-controls="loc-2"
+                        aria-selected="false">
+                        HOSPITAL
+                      </a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a
+                        class="nav-link text-uppercase ami-tab"
+                        id="pills-loc-3"
+                        data-bs-toggle="pill"
+                        data-bs-target="#loc-3"
+                        role="tab"
+                        aria-controls="loc-3"
+                        aria-selected="false">
+                        RETAIL
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Features Tab Content -->
+                <div class="tab-content" id="pills-tablocContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="loc-0"
+                    role="tabpanel"
+                    aria-labelledby="pills-loc-0"
+                    tabindex="0">
+                    <!-- Connectivity Features -->
+                    <div class="container locaton-features">
+                      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                        <div class="col my-2 locfec">
+                          <i class="fa-solid fa-location-dot"></i>
+                          20 mins from Thane Railway Station
+                        </div>
+
+                        <div class="col my-2 locfec">
+                          <i class="fa-solid fa-location-dot"></i>
+                          5 mins from Eastern Express Highway
+                        </div>
+
+                        <div class="col my-2 locfec">
+                          <i class="fa-solid fa-location-dot"></i>
+                          40 mins from Borivali
+                        </div>
+
+                        <div class="col my-2 locfec">
+                          <i class="fa-solid fa-location-dot"></i>
+                          45 mins from the Airport
+                        </div>
+
+                        <div class="col my-2 locfec">
+                          <i class="fa-solid fa-location-dot"></i>
+                          35 mins from Vashi
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="tab-pane fade"
+                    id="loc-1"
+                    role="tabpanel"
+                    aria-labelledby="pills-loc-1"
+                    tabindex="1">
+                    <!-- Educational Features -->
+                    <div class="container locaton-features">
+                      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                        <div class="col my-2 locfec">
+                          <i class="fa-solid fa-location-dot"></i>
+                          10 mins from St. Xaviers School
+                        </div>
+
+                        <div class="col my-2 locfec">
+                          <i class="fa-solid fa-location-dot"></i>
+                          10 mins from C.P. Goenka International School
+                        </div>
+
+                        <div class="col my-2 locfec">
+                          <i class="fa-solid fa-location-dot"></i>
+                          20 mins from Orchids International School
+                        </div>
+
+                        <div class="col my-2 locfec">
+                          <i class="fa-solid fa-location-dot"></i>
+                          25 mins from Billabong High International School
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="tab-pane fade"
+                    id="loc-2"
+                    role="tabpanel"
+                    aria-labelledby="pills-loc-2"
+                    tabindex="2">
+                    <!-- Hospital Features -->
+                    <div class="container locaton-features">
+                      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                        <div class="col my-2 locfec">
+                          <i class="fa-solid fa-location-dot"></i>
+                          20 mins from Life Care Hospital
+                        </div>
+
+                        <div class="col my-2 locfec">
+                          <i class="fa-solid fa-location-dot"></i>
+                          15 mins from Hiranandani Hospital
+                        </div>
+
+                        <div class="col my-2 locfec">
+                          <i class="fa-solid fa-location-dot"></i>
+                          10 mins to Jupiter Hospital
+                        </div>
+
+                        <div class="col my-2 locfec">
+                          <i class="fa-solid fa-location-dot"></i>
+                          20 mins to Horizon's Hospital
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="tab-pane fade"
+                    id="loc-3"
+                    role="tabpanel"
+                    aria-labelledby="pills-loc-3"
+                    tabindex="3">
+                    <!-- Retail Features -->
+                    <div class="container locaton-features">
+                      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                        <div class="col my-2 locfec">
+                          <i class="fa-solid fa-location-dot"></i>
+                          10 mins from Viviana Mall
+                        </div>
+                        <div class="col my-2 locfec">
+                          <i class="fa-solid fa-location-dot"></i>
+                          10 mins from R Mall
+                        </div>
+                        <div class="col my-2 locfec">
+                          <i class="fa-solid fa-location-dot"></i>
+                          15 mins from Korum Mall
+                        </div>
+                        <div class="col my-2 locfec">
+                          <i class="fa-solid fa-location-dot"></i>
+                          15 mins from Big Bazaar
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Section -->
+      <section id="about_section" class="container-fluid p-4 mt-3">
+        <div class="about_overlay">
+          <div class="container pt-2">
+            <div class="row">
+              <div class="col-12 col-lg-6 p-5 about-para-container">
+                <div class="text-center">
+                  <h2 class="section-heading text-white">About Dosti Group</h2>
+
+                  <div class="text-white about-para">
+                    <p>
+                      Ever since its inception in 1980, the foundation of Dosti
+                      Realty has been built on trust, reliability and
+                      togetherness. With a promise to constantly innovate and
+                      excel, Dosti Realty brings to you one step closer to the
+                      most fulfilling experience of your life.Dosti Realty has
+                      been in the real estate business for over 4 decades and
+                      delivered more than 129 properties till date, encompassing
+                      a portfolio of over 11.70 mn. sq. ft.
+                    </p>
+                    <span id="dots8" style="display: inline"></span>
+                    <span id="more8" style="display: none">
+                      <p>
+                        Currently Dosti Realty is constructing over 21 mn. sq.
+                        ft. across the Mumbai Metropolitan Region and Pune. Till
+                        date it has sold homes to 15,800+ happy families and
+                        continues to transform the skyline with its
+                        developments.The company has experience in various
+                        development types, be it Residential, Retail, IT Parks,
+                        Education etc.
+                      </p></span
+                    >
+                  </div>
+                  <button
+                    onclick="toggleContent('dots8','more8', 'myBtn8')"
+                    class="read_more"
+                    id="myBtn8">
+                    Read More
+                  </button>
+                  <br />
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-6 p-5">
+                <div class="text-center">
+                  <h3 class="section-heading text-white">CONTACT US</h3>
+                  <!-- Form -->
+                  <div class="enquire-section ps-5 pe-5">
+                    <div class="container">
+                      <form id="contact-form" class="text-center">
+                        <div class="mb-3">
+                          <label for="user_name" class="form-label">Name</label>
+                          <input
+                            type="text"
+                            class="form-control inputStyle shadow-none"
+                            name="user_name"
+                            id="user_name"
+                            placeholder="Name"
+                            autocomplete="off"
+                            required />
+                        </div>
+                        <div class="mb-3">
+                          <label for="user_email" class="form-label"
+                            >Email address</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control inputStyle shadow-none"
+                            name="user_email"
+                            id="user_email"
+                            placeholder="Email Address"
+                            autocomplete="off" />
+                        </div>
+                        <div class="mb-3">
+                          <label for="contact_number" class="form-label"
+                            >Phone Number</label
+                          >
+                          <input
+                            type="tel"
+                            class="form-control inputStyle shadow-none"
+                            id="contact_number"
+                            name="contact_number"
+                            pattern="[0-9]{10}"
+                            placeholder="Phone Number"
+                            oninvalid="setCustomValidity('Please enter a valid phone number. e.g., 12345-67890')"
+                            oninput="setCustomValidity('')"
+                            required />
+                        </div>
+
+                        <div
+                          class="d-flex ps-1 pb-2"
+                          style="font-size: 9px; color: #bfbfbf">
+                          <input
+                            type="checkbox"
+                            checked=""
+                            required=""
+                            class="custom-control-input custom-control-input-green"
+                            id="privacy_check"
+                            data-gtm-form-interact-field-id="0" />
+
+                          <label
+                            class="ps-2 pb-2 custom-control-label"
+                            for="privacy_check">
+                            I consent to the use of my provided data in
+                            accordance with the
+                            <a
+                              href="privacy_policy.html"
+                              target="_blank"
+                              style="font: inherit; color: inherit"
+                              >privacy policy</a
+                            >.</label
+                          >
+                        </div>
+
+                        <button
+                          type="submit"
+                          class="btn btn-primary submit-btn w-100">
+                          Submit
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container text-center text-white">
+        <div class="d-flex justify-content-center">
+          <div class="qrcode">
+            <img src="img/qr/" class="m-2" />
+          </div>
+        </div>
+        <div>
+          <p>
+            MahaRERA No -
+            <br />
+            Agent RERA : A----------
+          </p>
+
+          <p>
+            <a
+              href="https://maharera.mahaonline.gov.in"
+              style="color: #fff; text-decoration: none">
+              maharera.mahaonline.gov.in
+            </a>
+          </p>
+
+          <div class="text-center">
+            <p class="contact_details">
+              <b> Site Address:-</b> ---
+              <br />
+              <b> Contact No:-</b> +91 ---
+              <br />
+              <b> Email Address:-</b> support@---.com
+            </p>
+          </div>
+
+          <div>
+            <span>
+              Disclaimer : The information provided on this website is intended
+              exclusively for informational purposes and managed by a RERA
+              authorized real estate agent namely Mr. -----------. This Website
+              Is Not An Official Site And It Belongs To The Authorized Marketing
+              Partner For Information Purpose Only And Does Not Constitute An
+              Offer To Avail Any Service.
+            </span>
+            <span id="dots20" style="display: inline"></span>
+            <span id="more20" style="display: none">
+              <span>
+                The pricing information presented on this website is subject to
+                alteration without advance notification, and the assurance of
+                property availability cannot be guaranteed. The images showcased
+                on this website are for representational purposes only and may
+                not accurately reflect the actual properties. Please Note That
+                This Is The Official Website Of An Authorized Marketing Partner.
+                We May Share Data With Real Estate Regulatory Authority (RERA)
+                Registered Brokers/Companies For Further Processing As Required.
+                We May Also Send Updates And Information To The Mobile Number Or
+                Email ID Registered With Us. All rights reserved. The content,
+                design, and information on this website are protected by
+                copyright and other intellectual property rights. Any
+                unauthorized use or reproduction of the content may violate
+                applicable laws. For accurate and up-to-date information
+                regarding services, pricing, availability, and any other
+                details, it is recommended to contact us directly through the
+                provided contact information on this website. Thank you for
+                visiting our website.
+              </span>
+            </span>
+            <br />
+            <span
+              class="read_more2"
+              onclick="toggleContent('dots20','more20', 'myBtn20')"
+              id="myBtn20">
+              Read More
+            </span>
+          </div>
+
+          <p class="pb-4 pt-2">
+            <a
+              href="privacy_policy.html"
+              target="_blank"
+              style="text-decoration: none">
+              Privacy Policy
+            </a>
+            |
+            <a
+              href="termsandcondition.html"
+              target="_blank"
+              style="text-decoration: none">
+              Terms And Conditions
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Mobile Footer Fixed Button -->
+    <div class="container-fluid fixed-bottom action-footer-container">
+      <ul class="nav nav-fill action-footer">
+        <li class="nav-item ps-1">
+          <a
+            onclick="return gtag_report_conversion('https://wa.me/+919123456789');"
+            href="https://wa.me/+919123456789"
+            class="text-decoration-none text-white">
+            <i class="fa-brands fa-whatsapp nav-icon"> </i> Whatsapp
+          </a>
+        </li>
+        <li class="nav-item ps-1">
+          <a
+            onclick="return gtag_report_conversion('tel:+919123456789');"
+            href="tel:+919123456789"
+            class="text-decoration-none text-white">
+            <i class="fa-solid fa-phone me-2"></i> Call Us
+          </a>
+        </li>
+
+        <li
+          class="nav-item"
+          data-bs-toggle="modal"
+          data-bs-target="#popupModal">
+          <i class="fa-solid fa-download nav-icon"></i> Brochure
+        </li>
+      </ul>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="popupModal"
+      tabindex="-1"
+      aria-labelledby="ModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Title -->
+          <div class="modal-header">
+            <!-- <h1 class="modal-title fs-5" id="ModalLabel">Modal title</h1> -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+
+          <!-- Modal Body -->
+          <div class="modal-body">
+            <div class="container text-center">
+              <img
+                src="img/logo/logo.svg"
+                alt=""
+                height="50px"
+                class="modal_logo" />
+              <p class="mt-2">Register Here And Avail The Best Offers!!</p>
+            </div>
+            <div class="container">
+              <!--Enquire Form  -->
+              <div class="enquire-section">
+                <span class="d-block text-center fw-bold my-2">
+                  Get The Best Quote
+                </span>
+                <div class="container">
+                  <!-- Form -->
+                  <form id="contact-form-modal" class="text-center">
+                    <div class="mb-3">
+                      <label for="user_name_modal" class="form-label"
+                        >Name</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control inputStyle shadow-none"
+                        name="user_name"
+                        id="user_name_modal"
+                        placeholder="Name"
+                        autocomplete="off"
+                        required />
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="user_email_modal" class="form-label"
+                        >Email address</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control inputStyle shadow-none"
+                        name="user_email"
+                        id="user_email_modal"
+                        placeholder="Email Address"
+                        autocomplete="off" />
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="contact_number_modal" class="form-label"
+                        >Phone Number</label
+                      >
+                      <input
+                        type="tel"
+                        class="form-control inputStyle shadow-none"
+                        name="contact_number"
+                        id="contact_number_modal"
+                        pattern="[0-9]{10}"
+                        placeholder="Phone Number"
+                        oninvalid="setCustomValidity('Please enter a valid phone number. e.g., 12345-67890')"
+                        oninput="setCustomValidity('')"
+                        required />
+                    </div>
+
+                    <div
+                      class="d-flex ps-1 pb-2"
+                      style="font-size: 9px; color: #bfbfbf">
+                      <input
+                        type="checkbox"
+                        checked=""
+                        required=""
+                        class="custom-control-input custom-control-input-green"
+                        id="privacy_check_modal"
+                        data-gtm-form-interact-field-id="0" />
+
+                      <label
+                        class="ps-2 pb-2 custom-control-label"
+                        for="privacy_check_modal">
+                        I consent to the use of my provided data in accordance
+                        with the
+                        <a
+                          href="privacy_policy.html"
+                          target="_blank"
+                          style="font: inherit; color: inherit"
+                          >privacy policy</a
+                        >.</label
+                      >
+                    </div>
+
+                    <button type="submit" class="btn btn-primary submit-btn">
+                      Submit
+                    </button>
+                    <p class="m-2 form_norms">
+                      <span>
+                        Your contact details are safe with us. <br />
+                      </span>
+                      <span> Our team will be in touch with you soon.</span>
+                    </p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Footer -->
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
