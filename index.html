@@ -110,6 +110,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         return false;
       }
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body
     data-bs-spy="scroll"
@@ -213,8 +214,12 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
               data-bs-target="#main_slider"
               data-bs-slide-to="1"
               aria-label="Slide 2"></button>
-            <!-- <button type="button" data-bs-target="#main_slider" data-bs-slide-to="2"
-                      aria-label="Slide 3"></button> -->
+            <!-- <button
+              id="btn_3"
+              type="button"
+              data-bs-target="#main_slider"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"></button> -->
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -230,8 +235,11 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 alt="..." />
             </div>
             <!-- <div class="carousel-item">
-                      <img src="images/banner/feature.jpeg" class="d-block w-100 img-fluid" alt="...">
-                  </div> -->
+              <img
+                src="img/banners/banner4.webp"
+                class="d-block w-100 img-fluid"
+                alt="..." />
+            </div> -->
           </div>
           <button
             class="carousel-control-prev"
@@ -425,6 +433,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
               <div class="col-12 col-md-3">
                 <div class="card">
                   <img
+                    data-bs-toggle="modal"
+                    data-bs-target="#popupModal"
                     src="img/plans/lnt-elixir-reserve-powai-2BHK.webp"
                     class="card-img-top img-fluid"
                     alt="..." />
@@ -450,6 +460,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
               <div class="col-12 col-md-3">
                 <div class="card">
                   <img
+                    data-bs-toggle="modal"
+                    data-bs-target="#popupModal"
                     src="img/plans/lnt-elixir-reserve-powai-3BHK.webp"
                     class="card-img-top img-fluid"
                     alt="..." />
@@ -475,6 +487,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
               <div class="col-12 col-md-3">
                 <div class="card">
                   <img
+                    data-bs-toggle="modal"
+                    data-bs-target="#popupModal"
                     src="img/plans/lnt-elixir-reserve-powai-4BHK.webp"
                     class="card-img-top img-fluid"
                     alt="..." />
@@ -878,7 +892,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                             autocomplete="off"
                             required />
                         </div>
-                        <div class="mb-3">
+                        <!-- <div class="mb-3">
                           <label for="user_email" class="form-label"
                             >Email address</label
                           >
@@ -889,7 +903,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                             id="user_email"
                             placeholder="Email Address"
                             autocomplete="off" />
-                        </div>
+                        </div> -->
                         <div class="mb-3">
                           <label for="contact_number" class="form-label"
                             >Phone Number</label
@@ -1122,19 +1136,6 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                         placeholder="Name"
                         autocomplete="off"
                         required />
-                    </div>
-
-                    <div class="mb-3">
-                      <label for="user_email_modal" class="form-label"
-                        >Email address</label
-                      >
-                      <input
-                        type="email"
-                        class="form-control inputStyle shadow-none"
-                        name="user_email"
-                        id="user_email_modal"
-                        placeholder="Email Address"
-                        autocomplete="off" />
                     </div>
 
                     <div class="mb-3">
